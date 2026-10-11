@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>김부경 포트폴리오</title>
+<meta name="description" content="김부경 포트폴리오. LG CNS 자금조달 제안서와 자금판(엑셀).">
+<meta name="author" content="김부경">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231B2F61'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{
+  color-scheme: light;
+  --navy:#1B2F61; --blue:#004FA3; --sky:#52A5DC; --pale:#E9F1FA; --pale2:#D6E6F5;
+  --ink:#1D2433; --text:#3A4150; --muted:#6A7282; --line:#DDE3EC;
+  --font:"Pretendard","Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--text);font-family:var(--font);font-size:16px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--blue)}
+.wrap{max-width:920px;margin:0 auto;padding:0 24px}
+
+/* header */
+.head{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.head::before,.head::after{content:"";position:absolute;background:rgba(255,255,255,.045);pointer-events:none}
+.head::before{width:220px;height:220px;right:-40px;top:-60px}
+.head::after{width:140px;height:140px;right:170px;bottom:-70px}
+.head .wrap{display:flex;align-items:center;gap:32px;padding-top:48px;padding-bottom:48px;position:relative}
+.photo{width:132px;height:170px;object-fit:cover;border-radius:4px;flex:none;background:#fff}
+.who .for{font-size:14px;color:#B9C6DF;margin:0 0 6px}
+.who h1{margin:0;font-size:38px;line-height:1.2;font-weight:700;letter-spacing:-.01em}
+.who .edu{margin:10px 0 0;font-size:16px;color:#E3E9F4}
+
+/* sections */
+main{padding-bottom:24px}
+section{padding-top:56px}
+h2{display:flex;align-items:center;gap:10px;margin:0 0 20px;font-size:21px;color:var(--navy);font-weight:700}
+h2 .mark{display:inline-flex;align-items:center;justify-content:center;width:34px;height:18px;border-radius:9px;background:var(--navy)}
+h2 .mark svg{width:16px;height:10px}
+
+/* main project */
+.proj{border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.proj .top{padding:26px 28px 22px}
+.proj .label{font-size:13px;color:var(--muted);margin:0 0 4px}
+.proj h3{margin:0 0 10px;font-size:23px;color:var(--ink);line-height:1.4}
+.proj p{margin:0}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);margin:22px 0 4px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.nums div{padding:14px 0 14px 16px;border-left:1px solid var(--line)}
+.nums div:first-child{border-left:0;padding-left:0}
+.nums dt{font-size:13px;color:var(--muted)}
+.nums dd{margin:0;font-size:22px;font-weight:700;color:var(--navy);line-height:1.4}
+.nums dd small{font-size:14px;font-weight:500;margin-left:2px;color:var(--text)}
+.did{margin:18px 0 0;padding-left:18px}
+.did li{margin-bottom:4px}
+.did li::marker{color:var(--sky)}
+.preview{display:block;margin:0;background:var(--pale);padding:20px 28px}
+.preview img{display:block;width:100%;height:auto;border:1px solid var(--pale2);border-radius:2px}
+.files{padding:22px 28px 26px;border-top:1px solid var(--line)}
+.files h4{margin:0 0 12px;font-size:15px;color:var(--navy)}
+.file{display:flex;align-items:center;gap:14px;padding:12px 14px;border:1px solid var(--line);border-radius:4px;text-decoration:none;color:var(--ink);margin-bottom:8px}
+.file:hover,.file:focus-visible{border-color:var(--blue);background:#F7FAFE}
+.file .ic{width:38px;height:46px;flex:none}
+.file .nm{font-weight:600;font-size:15.5px;line-height:1.4}
+.file .ds{font-size:13px;color:var(--muted);line-height:1.4}
+.file .dl{margin-left:auto;font-size:14px;color:var(--blue);font-weight:600;white-space:nowrap}
+
+/* lists */
+.items{list-style:none;margin:0;padding:0;border-top:2px solid var(--navy)}
+.items li{display:grid;grid-template-columns:170px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+.items .when{font-size:14.5px;color:var(--muted)}
+.items h3{margin:0 0 2px;font-size:17px;color:var(--ink)}
+.items h3 span{font-size:14px;font-weight:400;color:var(--muted);margin-left:8px}
+.items p{margin:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.two>div{min-width:0}
+.box{background:var(--pale);border-radius:4px;padding:18px 22px}
+.box h3{margin:0 0 8px;font-size:15px;color:var(--navy)}
+.box ul{margin:0;padding:0;list-style:none}
+.box li{padding:3px 0;color:var(--ink)}
+.box li span{color:var(--muted);font-size:14px;margin-left:6px}
+footer{margin-top:64px;border-top:1px solid var(--line);padding:22px 0 40px;font-size:13px;color:var(--muted)}
+@media (max-width:720px){
+  .head .wrap{gap:20px;padding-top:36px;padding-bottom:36px}
+  .photo{width:96px;height:124px}
+  .who h1{font-size:30px}
+  .items li{grid-template-columns:1fr;gap:2px}
+  .two{grid-template-columns:1fr;gap:16px}
+}
+@media (max-width:480px){
+  .wrap{padding:0 16px}
+  .proj .top,.files{padding-left:18px;padding-right:18px}
+  .preview{padding:14px 18px}
+  .nums{grid-template-columns:1fr}
+  .nums div{border-left:0;padding-left:0;border-top:1px solid var(--line)}
+  .nums div:first-child{border-top:0}
+  .file .dl{display:none}
+}
+</style>
+</head>
+<body>
+<header class="head">
+  <div class="wrap">
+    <img class="photo" src="img/profile.jpg" alt="김부경 증명사진" width="132" height="170">
+    <div class="who">
+      <p class="for">현대오토에버 지원 포트폴리오</p>
+      <h1>김부경</h1>
+      <p class="edu">고려대학교 경영학과 졸업 (2026)</p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section aria-labelledby="h-proj">
+    <h2 id="h-proj"><span class="mark" aria-hidden="true"><svg viewBox="0 0 16 10" fill="none" stroke="#fff" stroke-width="1.6"><path d="M1 5h13M10 1.5 14 5l-4 3.5"/></svg></span>포트폴리오</h2>
+    <article class="proj">
+      <div class="top">
+        <p class="label">공개자료 기반 독립 분석, 2026.10</p>
+        <h3>LG CNS 자금조달 제안서</h3>
+        <p>GPU 장비 투자 3,814억원과 사채 만기, 배당이 2027년 상반기에 겹치는 상황에서 운영자금을 지키기 위한 확약 회전한도 4,500억원을 제안했습니다.</p>
+        <dl class="nums">
+          <div><dt>기본 시나리오 인출</dt><dd>0<small>억원</small></dd></div>
+          <div><dt>회수지연 시 최대 인출</dt><dd>3,832<small>억원</small></dd></div>
+          <div><dt>제안 확약한도</dt><dd>4,500<small>억원</small></dd></div>
+        </dl>
+        <ul class="did">
+          <li>2026 반기보고서와 DART 공시 35개 항목을 원문 단위로 대사</li>
+          <li>2026.07부터 2028.12까지 월별 자금판을 기본, 회수지연, 복합위기 3개 시나리오로 계산</li>
+          <li>보유자금, 확약한도, 회사채, 리스, GPU 담보 PF를 비교해 한도 규모와 조건 제안</li>
+          <li>투자 승인부터 지급, 자산 인식, 회수, 차입, 자금 예측까지 6개 영역의 통제 예시 작성</li>
+        </ul>
+      </div>
+      <figure class="preview"><img src="img/preview.jpg" alt="제안서 2쪽 제안요약: 기본 경로 인출 0원, 회수지연 시 최대 3,832억원, 확약한도 4,500억원" width="1600" height="900" loading="lazy"></figure>
+      <div class="files">
+        <h4>첨부파일</h4>
+        <a class="file" href="files/LGCNS_proposal.pdf" download="LG_CNS_자금조달제안서.pdf">
+          <svg class="ic" viewBox="0 0 38 46" aria-hidden="true"><path d="M2 2h24l10 10v32H2z" fill="#fff" stroke="#1B2F61" stroke-width="2"/><path d="M26 2v10h10" fill="none" stroke="#1B2F61" stroke-width="2"/><rect x="0" y="24" width="30" height="13" rx="2" fill="#1B2F61"/><text x="15" y="33.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="#fff" font-family="sans-serif">PDF</text></svg>
+          <span><span class="nm">LG_CNS_자금조달제안서.pdf</span><br><span class="ds">제안서 14쪽, 400KB</span></span>
+          <span class="dl">다운로드</span></a>
+        <a class="file" href="files/LGCNS_cashflow.xlsx" download="LG_CNS_자금판.xlsx">
+          <svg class="ic" viewBox="0 0 38 46" aria-hidden="true"><path d="M2 2h24l10 10v32H2z" fill="#fff" stroke="#004FA3" stroke-width="2"/><path d="M26 2v10h10" fill="none" stroke="#004FA3" stroke-width="2"/><rect x="0" y="24" width="30" height="13" rx="2" fill="#004FA3"/><text x="15" y="33.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="#fff" font-family="sans-serif">XLSX</text></svg>
+          <span><span class="nm">LG_CNS_자금판.xlsx</span><br><span class="ds">자금판 엑셀 7개 시트 (총괄, 가정, 월별 자금판, 연도별 요약, 공시원문, 통제, 검증), 71KB</span></span>
+          <span class="dl">다운로드</span></a>
+      </div>
+    </article>
+  </section>
+
+  <section aria-labelledby="h-other">
+    <h2 id="h-other"><span class="mark" aria-hidden="true"><svg viewBox="0 0 16 10" fill="none" stroke="#fff" stroke-width="1.6"><path d="M1 5h13M10 1.5 14 5l-4 3.5"/></svg></span>다른 프로젝트</h2>
+    <ul class="items">
+      <li><div class="when">2026<br>iM증권 DCM 일경험</div><div><h3>LG디스플레이 자금조달 제안서<span>4인 팀</span></h3>
+        <p>부동산 Sale &amp; Leaseback과 장래매출채권 유동화를 제안했습니다. 조원들이 조사한 자료를 모아 통합본을 작성했고 최종 발표를 맡았습니다.</p></div></li>
+      <li><div class="when">2026.08<br>개인 연구, R</div><div><h3>환율과 미국 통상환경 변화가 국내 수출산업에 미치는 영향</h3>
+        <p>2024.01부터 2026.07까지 월별 수출액과 원/달러 환율을 시차 상관분석(자동차부품, 일반기계, 화장품)하고, 가상 중소 수출기업 손익 시나리오로 무역보험 활용 순서를 제안했습니다.</p></div></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="h-exp">
+    <h2 id="h-exp"><span class="mark" aria-hidden="true"><svg viewBox="0 0 16 10" fill="none" stroke="#fff" stroke-width="1.6"><path d="M1 5h13M10 1.5 14 5l-4 3.5"/></svg></span>경험</h2>
+    <ul class="items">
+      <li><div class="when">2026.05 – 2026.06</div><div><h3>온누리세무회계<span>아르바이트</span></h3>
+        <p>개인사업자와 프리랜서 소득자료를 검토하고 세금신고와 회계처리를 보조했습니다. 예상세액 역산 엑셀 모델을 만들어 신고가 끝난 자료로 결과를 대조했고, 퇴사 후에도 사무실에서 계속 쓰였습니다.</p></div></li>
+      <li><div class="when">2020.03 – 2020.04</div><div><h3>돌로박스<span>재무팀 보조, 스타트업</span></h3>
+        <p>재무제표와 매출 구성, 비용 요인, 고객 패턴을 분석하고 고객 세그먼트별 가격과 구독 방식을 제안했습니다.</p></div></li>
+      <li><div class="when">대학 활동</div><div><h3>YO-KO 메이커톤 최우수상 (1위)</h3>
+        <p>KURC 봉사동아리 회장 (1년), X-Garage 행사팀장 (약 1년), 경제연합동아리 기획부장</p></div></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="h-cert">
+    <h2 id="h-cert"><span class="mark" aria-hidden="true"><svg viewBox="0 0 16 10" fill="none" stroke="#fff" stroke-width="1.6"><path d="M1 5h13M10 1.5 14 5l-4 3.5"/></svg></span>자격과 역량</h2>
+    <div class="two">
+      <div class="box"><h3>자격증</h3><ul>
+        <li>투자자산운용사</li><li>ADsP<span>데이터분석 준전문가</span></li><li>매경TEST</li><li>Google Analytics Certification</li></ul></div>
+      <div class="box"><h3>어학과 도구</h3><ul>
+        <li>TOEIC 955</li><li>OPIc AL</li><li>Excel<span>자금판, 세액 역산 모델</span></li><li>R, SPSS<span>시차 상관분석, 통계분석</span></li></ul></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">김부경, 2026.10</div></footer>
+</body>
+</html>
