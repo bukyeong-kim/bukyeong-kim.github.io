@@ -31,7 +31,7 @@ a{color:var(--blue)}
 .photo{width:132px;height:170px;object-fit:cover;border-radius:4px;flex:none;background:#fff}
 .who .for{font-size:14px;color:#B9C6DF;margin:0 0 6px}
 .who h1{margin:0;font-size:38px;line-height:1.2;font-weight:700;letter-spacing:-.01em}
-.who .edu{margin:10px 0 0;font-size:16px;color:#E3E9F4}
+.who .edu{margin:10px 0 0;font-size:16px;line-height:1.6;color:#E3E9F4}
 
 /* sections */
 main{padding-bottom:24px}
@@ -73,6 +73,10 @@ h2 .mark svg{width:16px;height:10px}
 .items h3{margin:0 0 2px;font-size:17px;color:var(--ink)}
 .items h3 span{font-size:14px;font-weight:400;color:var(--muted);margin-left:8px}
 .items p{margin:0}
+h3.sub{margin:30px 0 10px;font-size:16px;color:var(--navy)}
+.acts{border-top:1px solid var(--navy)}
+.acts li{padding:14px 0}
+.acts h3{margin:0}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 .two>div{min-width:0}
 .box{background:var(--pale);border-radius:4px;padding:18px 22px}
@@ -106,7 +110,7 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:22px 0 40px;font
     <div class="who">
       <p class="for">현대오토에버 지원 포트폴리오</p>
       <h1>김부경</h1>
-      <p class="edu">고려대학교 경영학과 졸업 (2026)</p>
+      <p class="edu">고려대학교 경영학과 졸업<br>목동고등학교 졸업</p>
     </div>
   </div>
 </header>
@@ -116,7 +120,7 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:22px 0 40px;font
     <h2 id="h-proj"><span class="mark" aria-hidden="true"><svg viewBox="0 0 16 10" fill="none" stroke="#fff" stroke-width="1.6"><path d="M1 5h13M10 1.5 14 5l-4 3.5"/></svg></span>포트폴리오</h2>
     <article class="proj">
       <div class="top">
-        <p class="label">공개자료 기반 독립 분석, 2026.10</p>
+        <p class="label">iM증권 DCM 일경험 프로젝트, 2026</p>
         <h3>LG CNS 자금조달 제안서</h3>
         <p>GPU 장비 투자 3,814억원과 사채 만기, 배당이 2027년 상반기에 겹치는 상황에서 운영자금을 지키기 위한 확약 회전한도 4,500억원을 제안했습니다.</p>
         <dl class="nums">
@@ -146,25 +150,25 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:22px 0 40px;font
     </article>
   </section>
 
-  <section aria-labelledby="h-other">
-    <h2 id="h-other"><span class="mark" aria-hidden="true"><svg viewBox="0 0 16 10" fill="none" stroke="#fff" stroke-width="1.6"><path d="M1 5h13M10 1.5 14 5l-4 3.5"/></svg></span>다른 프로젝트</h2>
-    <ul class="items">
-      <li><div class="when">2026<br>iM증권 DCM 일경험</div><div><h3>LG디스플레이 자금조달 제안서<span>4인 팀</span></h3>
-        <p>부동산 Sale &amp; Leaseback과 장래매출채권 유동화를 제안했습니다. 조원들이 조사한 자료를 모아 통합본을 작성했고 최종 발표를 맡았습니다.</p></div></li>
-      <li><div class="when">2026.08<br>개인 연구, R</div><div><h3>환율과 미국 통상환경 변화가 국내 수출산업에 미치는 영향</h3>
-        <p>2024.01부터 2026.07까지 월별 수출액과 원/달러 환율을 시차 상관분석(자동차부품, 일반기계, 화장품)하고, 가상 중소 수출기업 손익 시나리오로 무역보험 활용 순서를 제안했습니다.</p></div></li>
-    </ul>
-  </section>
 
   <section aria-labelledby="h-exp">
     <h2 id="h-exp"><span class="mark" aria-hidden="true"><svg viewBox="0 0 16 10" fill="none" stroke="#fff" stroke-width="1.6"><path d="M1 5h13M10 1.5 14 5l-4 3.5"/></svg></span>경험</h2>
     <ul class="items">
+      <li><div class="when">2026<br>iM증권 일경험</div><div><h3>DCM 기업금융 일경험 프로젝트</h3>
+        <p>LG CNS 자금조달 제안서를 작성하고 월별 자금판을 엑셀로 모델링했습니다. 위 포트폴리오의 제안서와 자금판이 이 프로젝트의 결과물입니다.</p></div></li>
       <li><div class="when">2026.05 – 2026.06</div><div><h3>온누리세무회계<span>아르바이트</span></h3>
         <p>개인사업자와 프리랜서 소득자료를 검토하고 세금신고와 회계처리를 보조했습니다. 예상세액 역산 엑셀 모델을 만들어 신고가 끝난 자료로 결과를 대조했고, 퇴사 후에도 사무실에서 계속 쓰였습니다.</p></div></li>
-      <li><div class="when">2020.03 – 2020.04</div><div><h3>돌로박스<span>재무팀 보조, 스타트업</span></h3>
-        <p>재무제표와 매출 구성, 비용 요인, 고객 패턴을 분석하고 고객 세그먼트별 가격과 구독 방식을 제안했습니다.</p></div></li>
-      <li><div class="when">대학 활동</div><div><h3>YO-KO 메이커톤 최우수상 (1위)</h3>
-        <p>KURC 봉사동아리 회장 (1년), X-Garage 행사팀장 (약 1년), 경제연합동아리 기획부장</p></div></li>
+    </ul>
+    <h3 class="sub">대학 활동</h3>
+    <ul class="items acts">
+      <li><div class="when">회장</div><div><h3>경제경영동아리</h3>
+        <p>토론 논제를 선정하고 토론을 진행했습니다.</p></div></li>
+      <li><div class="when">회장, 1년</div><div><h3>KURC 봉사동아리</h3>
+        <p>오래 중단됐던 교내 판매행사를 외부업체가 판매하고 동아리가 홍보와 운영을 맡는 방식으로 다시 열었고, 수익금은 학교 인근 봉사단체에 기부했습니다. 총 봉사시간 약 102시간.</p></div></li>
+      <li><div class="when">행사팀장, 약 1년</div><div><h3>X-Garage</h3>
+        <p>장비교육 행사의 참가 규모 확인부터 재료 구매, 지출 정산까지 맡았습니다.</p></div></li>
+      <li><div class="when">최우수상 (1위)</div><div><h3>YO-KO 메이커톤</h3>
+        <p>전동킥보드 2인 탑승을 하중으로 감지해 운행을 제한하는 아이디어를 정해진 예산 안에서 부품 사양과 비용을 따져 구현했습니다.</p></div></li>
     </ul>
   </section>
 
@@ -174,7 +178,7 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:22px 0 40px;font
       <div class="box"><h3>자격증</h3><ul>
         <li>투자자산운용사</li><li>ADsP<span>데이터분석 준전문가</span></li><li>매경TEST</li><li>Google Analytics Certification</li></ul></div>
       <div class="box"><h3>어학과 도구</h3><ul>
-        <li>TOEIC 955</li><li>OPIc AL</li><li>Excel<span>자금판, 세액 역산 모델</span></li><li>R, SPSS<span>시차 상관분석, 통계분석</span></li></ul></div>
+        <li>TOEIC 955</li><li>OPIc AL</li><li>Excel<span>자금판, 세액 역산 모델</span></li><li>R, SPSS<span>통계분석</span></li></ul></div>
     </div>
   </section>
 </main>
